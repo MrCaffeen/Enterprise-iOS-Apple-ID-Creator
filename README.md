@@ -1,2 +1,3 @@
-Verified to be working with iTunes 12.1 on Mac OS 10.10.2 for US version of iTunes **ONLY**
-Tested and working 12.1.0.50 AU version of iTunes
+Verified to be working with iTunes Version:
+  USA 12.1 (20/02/2015)
+  AUS 12.1.0.50 (18/03/2015)
