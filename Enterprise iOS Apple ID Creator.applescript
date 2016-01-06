@@ -1,4 +1,4 @@
-﻿--VERSION 1.2.0.16  Version history at bottom of script
+--VERSION 1.2.0.16  Version history at bottom of script
 
 
 --TO DO:
@@ -39,10 +39,10 @@
 
 --property iTunesCountryCode : "" --set for error trap set for those don't know they need to set the localisation, comment this one out when the locale is set
 
-property iTunesCountryCode : "USA"
+--property iTunesCountryCode : "USA"
 --property iTunesCountryCode : "POL"
 --property iTunesCountryCode : "GBR"
---property iTunesCountryCode : "AUS"
+property iTunesCountryCode : "AUS"
 --property iTunesCountryCode : "NZL"
 --property iTunesCountryCode : "SWE"
 --property iTunesCountryCode : "FRA"
@@ -121,8 +121,8 @@ property processDelay : 1
 property checkFrequency : 0.5
 
 --Used to store supported iTunes versions
-property supportedItunesVersions : {"12.1"}
-property supportedOSVersions : {"10.10.2"}
+property supportedItunesVersions : {"12.1", "12.3.2"}
+property supportedOSVersions : {"10.10.2", "10.10.5"}
 
 --Used for checking if iTunes is loading a page
 property itunesAccessingString : "Accessing iTunes Store…"
@@ -188,7 +188,7 @@ if iTunesCountryCode is "POL" then
 	set curTermsExpectedElementLocation to "Warunki oraz Ochrona prywatności firmy Apple"
 	set curCheckBox to 1
 	set curCheckBoxNum to 5
-	set noOfResponses to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to true
@@ -212,7 +212,7 @@ if iTunesCountryCode is "POL" then
 	set curPhonePos to 2
 end if
 
--- Updated & Tested on 18/03/2015 MrCaffeen
+
 if iTunesCountryCode is "AUS" then
 	set ibooksLinkLocation to "itms://itunes.apple.com/au/app/ibooks/id364709193?mt=8"
 	set curExpectedElementString to "Welcome to the iTunes Store"
@@ -244,7 +244,6 @@ if iTunesCountryCode is "AUS" then
 	set curAreaCode to true
 	set curPhonePos to 2
 end if
-
 
 if iTunesCountryCode is "GBR" then
 	set ibooksLinkLocation to "itms://itunes.apple.com/gb/app/ibooks/id364709193?mt=8"
@@ -286,8 +285,8 @@ if iTunesCountryCode is "NZL" then
 	set curTermsExpectedElementString to "Terms and Conditions and Apple Privacy Policy"
 	set curTermsExpectedElementLocation to "Terms and Conditions and Apple Privacy Policy"
 	set curCheckBox to 1
-	set curCheckBoxNum to 4
-	set noOfResponses to 5
+	set curCheckBoxNum to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to true
@@ -322,7 +321,7 @@ if iTunesCountryCode is "SWE" then
 	set curTermsExpectedElementLocation to "Villkor och Apples policy för integritetsskydd"
 	set curCheckBox to 1
 	set curCheckBoxNum to 5
-	set noOfResponses to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to false
@@ -354,7 +353,7 @@ if iTunesCountryCode is "FRA" then
 	set curTermsExpectedElementLocation to "Terms and Conditions and Apple Privacy Policy"
 	set curCheckBox to 1
 	set curCheckBoxNum to 5
-	set noOfResponses to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to true
@@ -386,8 +385,8 @@ if iTunesCountryCode is "CAN" then
 	set curTermsExpectedElementString to "Terms and Conditions and Apple Privacy Policy"
 	set curTermsExpectedElementLocation to "Terms and Conditions and Apple Privacy Policy"
 	set curCheckBox to 1
-	set curCheckBoxNum to 4
-	set noOfResponses to 5
+	set curCheckBoxNum to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to true
@@ -420,8 +419,8 @@ if iTunesCountryCode is "FJI" then
 	set curTermsExpectedElementString to "Terms and Conditions and Apple Privacy Policy"
 	set curTermsExpectedElementLocation to "Terms and Conditions and Apple Privacy Policy"
 	set curCheckBox to 1
-	set curCheckBoxNum to 4
-	set noOfResponses to 5
+	set curCheckBoxNum to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to true
@@ -452,8 +451,8 @@ if iTunesCountryCode is "PNG" then
 	set curTermsExpectedElementString to "Terms and Conditions and Apple Privacy Policy"
 	set curTermsExpectedElementLocation to "Terms and Conditions and Apple Privacy Policy"
 	set curCheckBox to 1
-	set curCheckBoxNum to 4
-	set noOfResponses to 5
+	set curCheckBoxNum to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to false
@@ -486,8 +485,8 @@ if iTunesCountryCode is "SLB" then
 	set curTermsExpectedElementString to "Terms and Conditions and Apple Privacy Policy"
 	set curTermsExpectedElementLocation to "Terms and Conditions and Apple Privacy Policy"
 	set curCheckBox to 1
-	set curCheckBoxNum to 4
-	set noOfResponses to 5
+	set curCheckBoxNum to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to true
@@ -521,7 +520,7 @@ if iTunesCountryCode is "DEU" then
 	set curTermsExpectedElementLocation to "Terms and Conditions and Apple Privacy Policy"
 	set curCheckBox to 1
 	set curCheckBoxNum to 5
-	set noOfResponses to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to true
@@ -553,7 +552,7 @@ if iTunesCountryCode is "NPL" then
 	set curTermsExpectedElementLocation to "Terms and Conditions and Apple Privacy Policy"
 	set curCheckBox to 1
 	set curCheckBoxNum to 5
-	set noOfResponses to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to true
@@ -585,7 +584,7 @@ if iTunesCountryCode is "FIN" then
 	set curTermsExpectedElementLocation to "Käyttöehdot ja Applen tietosuojakäytäntö"
 	set curCheckBox to 1
 	set curCheckBoxNum to 5
-	set noOfResponses to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to false
@@ -616,8 +615,8 @@ if iTunesCountryCode is "IND" then
 	set curTermsExpectedElementString to "Terms and Conditions and Apple Privacy Policy"
 	set curTermsExpectedElementLocation to "Terms and Conditions and Apple Privacy Policy"
 	set curCheckBox to 1
-	set curCheckBoxNum to 4
-	set noOfResponses to 5
+	set curCheckBoxNum to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to true
@@ -649,7 +648,7 @@ if iTunesCountryCode is "ESP" then
 	set curTermsExpectedElementLocation to "Terms and Conditions and Apple Privacy Policy"
 	set curCheckBox to 1
 	set curCheckBoxNum to 5
-	set noOfResponses to 5
+	set noOfResponses to 6
 	set curMonthPos to 2
 	set curDayPos to 1
 	set enableTitle to true
@@ -1427,7 +1426,7 @@ on SignOutItunesAccount()
 			tell application "iTunes" to open location ibooksLinkLocation
 			delay masterDelay
 			
-			repeat until description of scroll area 1 of window 1 of application process "iTunes" is "Apple logo"
+			repeat until description of scroll area 1 of window "iTunes" of application process "iTunes" is "Apple logo"
 				delay (masterDelay * processDelay)
 			end repeat
 			
